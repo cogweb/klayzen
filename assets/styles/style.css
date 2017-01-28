@@ -1,11 +1,11 @@
-@import url(https://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
-@import url(https://weloveiconfonts.com/api/?family=zocial);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
 
 /* zocial */
 [class*="zocial-"]:before {
