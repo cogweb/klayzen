@@ -424,6 +424,9 @@ section[data-anchor="contact"] a:hover {
   background: rgba(0,0,0,0.5);
   color: #b8b44d;
 }
+.green {
+  color: #b8b44d;
+}
 
 .menu-button:hover .rocket {
 	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
