@@ -10,7 +10,7 @@ $(document).ready(function() {
 		 anchors:['about', 'portfolio', 'skills', 'contact'],
 		 scrollBar: true,
 		 scrollingSpeed: 250,
-		 responsiveHeight: 375,
+		//  responsiveHeight: 375,
 	});
 });
 
