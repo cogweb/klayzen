@@ -12,7 +12,7 @@
   font-family: 'zocial', sans-serif;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -26,8 +26,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -38,7 +38,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -245,7 +245,7 @@ header.active {
 
 .menu-button {
 	color: #d85b5b;
-    position:relative; background-color:#1c1a1e; 
+    position:relative; background-color:#1c1a1e;
     display: inline-block;
     width: 312px;
     height: 123px;
@@ -350,7 +350,7 @@ header.active nav {
 	display: block;
 }
 
-#content {
+#fullpage {
 	margin-top: -8px;
 	max-width: 900px;
 	padding: 0px 45px 45px 200px;
@@ -358,21 +358,71 @@ header.active nav {
 	z-index: 1;
 }
 
-section {
+/*section {
 	height: 100vh;
 	padding-top: 165px;
-}
+}*/
 
-section#portfolio h2 {
+section[data-anchor="portfolio"] h2,
+section[data-anchor="portfolio"] a:link {
 	color: #4d91b8;
 }
-
-section#skills h2 {
-	color: #4db85a;
+section[data-anchor="portfolio"] a:link {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+  background: rgba(0,0,0,0.8);
+  display: inline-block;
+  margin: 0 0 5px 0;
+  padding: 4px 10px 1px;
+  width: 250px;
+}
+section[data-anchor="portfolio"] a:hover {
+  background: rgba(0,0,0,0.5);
+  color: #4d91b8;
 }
 
-section#contact h2 {
+section[data-anchor="skills"] h2,
+section[data-anchor="skills"] a:link {
+	color: #4db85a;
+}
+section[data-anchor="skills"] a:link {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+  background: rgba(0,0,0,0.8);
+  display: inline-block;
+  margin: 0 0 5px 0;
+  padding: 4px 10px 1px;
+  /*width: 250px;*/
+}
+section[data-anchor="skills"] a:hover {
+  background: rgba(0,0,0,0.5);
+  color: #4db85a;
+}
+
+
+section[data-anchor="contact"] h2,
+section[data-anchor="contact"] a:link {
 	color: #b8b44d;
+}
+section[data-anchor="contact"] a:link {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  display: inline-block;
+  margin: 0 0 5px 0;
+  padding: 4px 10px 1px;
+  /*width: 250px;*/
+}
+section[data-anchor="contact"] a:hover {
+  background: rgba(0,0,0,0.5);
+  color: #b8b44d;
 }
 
 .menu-button:hover .rocket {
@@ -386,7 +436,7 @@ section#contact h2 {
 	10%, 90% {
 		transform: translate3d(-1px, 0, 0);
 	}
-	
+
 	20%, 80% {
 		transform: translate3d(2px, 0, 0);
 	}
@@ -555,4 +605,3 @@ body.about.portfolio.skills .menu-button span {
 body.about.portfolio.skills footer {
 	color: #b8b44d;
 }
-
