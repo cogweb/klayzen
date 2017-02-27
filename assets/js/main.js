@@ -9,7 +9,8 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		 anchors:['about', 'portfolio', 'skills', 'contact'],
 		 scrollBar: true,
-		 scrollingSpeed: 250
+		 scrollingSpeed: 250,
+		 responsiveHeight: 375,
 	});
 });
 

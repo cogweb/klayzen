@@ -608,3 +608,208 @@ body.about.portfolio.skills .menu-button span {
 body.about.portfolio.skills footer {
 	color: #b8b44d;
 }
+
+@media screen and (max-width: 1365px) {
+  header {
+    height: 76px;
+    width: 500px;
+  }
+  nav {
+    right: 300px;
+  }
+  .logo:link, .logo:visited {
+    font-size: 54px;
+    line-height: 76px;
+  }
+  nav a:link, nav a:visited {
+    font-size: 21px;
+    line-height: 76px;
+  }
+  .menu-button {
+    height: 76px;
+    width: 250px;
+  }
+  .menu-button:before {
+      border-top: 76px solid #d85b5b;
+      border-right: 76px solid transparent;
+  }
+  .menu-button:after {
+      border-top: 76px solid transparent;
+      border-right: 76px solid transparent;
+  }
+  .menu-button .menu {
+    font-size: 24px;
+    line-height: 76px;
+    right: 75px;
+  }
+  .menu-button .rocket {
+      font-size: 36px;
+      line-height: 76px;
+  }
+  body.about .menu-button:before {
+  	border-top: 76px solid #4d91b8;
+  }
+  body.about.portfolio .menu-button:before {
+  	border-top: 76px solid #4db85a;
+  }
+  body.about.portfolio.skills .menu-button:before {
+  	border-top: 76px solid #b8b44d;
+  }
+  .menu-button .rocket {
+    height: 76px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #fullpage {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 0;
+  }
+  header.active .logo {
+    display: none;
+  }
+  nav {
+    right: auto;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  nav a:link, nav a:visited {
+    font-size: 16px;
+  }
+  footer {
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 0 0 5px 0;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.25;
+    margin: 0 0 5px 0;
+  }
+  header {
+    width: 100%;
+  }
+  nav a:link, nav a:visited {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .menu-button {
+    width: 120px;
+  }
+  .menu-button .menu {
+    display: none;
+  }
+  nav a::before {
+  	margin-right: 5px;
+  	content: '';
+  }
+
+  nav a::after {
+  	color: rgba(0,0,0,0.3);
+  	margin-left: 5px;
+  	content: '';
+  }
+}
+@media screen and (max-width: 479px) {
+  header {
+    height: 48px;
+    padding: 0 15px;
+  }
+  nav a:link, nav a:visited {
+    line-height: 52px;
+  }
+  .logo:link, .logo:visited {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .menu-button {
+    font-size: 24px;
+    width: 90px;
+  }
+  .menu-button:before {
+    border-top: 48px solid #d85b5b;
+    border-right: 48px solid transparent;
+  }
+  body.about .menu-button:before {
+    border-top: 48px solid #4d91b8;
+  }
+  body.about.portfolio .menu-button:before {
+    border-top: 48px solid #4db85a;
+  }
+  body.about.portfolio.skills .menu-button:before {
+    border-top: 48px solid #b8b44d;
+  }
+  .menu-button .rocket {
+    font-size: 24px;
+    height: 52px;
+    line-height: 52px;
+  }
+}
+@media screen and (max-width: 414px) {
+  p {
+    font-size: 12px;
+  }
+  section[data-anchor="portfolio"] a:link {
+    width: 100%;
+  }
+  nav a:link, nav a:visited {
+    font-size: 12px;
+  }
+  .menu-button {
+    width: 0;
+  }
+  .menu-button .rocket {
+    color: black !important;
+    right: 15px;
+  }
+}
+@media screen and (max-height: 414px) {
+  header {
+    height: 48px;
+    padding: 0 15px;
+  }
+  nav a:link, nav a:visited {
+    line-height: 52px;
+  }
+  .logo:link, .logo:visited {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .menu-button {
+    font-size: 24px;
+    width: 90px;
+  }
+  .menu-button:before {
+    border-top: 48px solid #d85b5b;
+    border-right: 48px solid transparent;
+  }
+  body.about .menu-button:before {
+    border-top: 48px solid #4d91b8;
+  }
+  body.about.portfolio .menu-button:before {
+    border-top: 48px solid #4db85a;
+  }
+  body.about.portfolio.skills .menu-button:before {
+    border-top: 48px solid #b8b44d;
+  }
+  .menu-button .rocket {
+    font-size: 24px;
+    height: 52px;
+    line-height: 52px;
+  }
+  p {
+    font-size: 12px;
+  }
+  footer {
+    display: none;
+  }
+}
