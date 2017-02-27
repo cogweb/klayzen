@@ -813,4 +813,7 @@ body.about.portfolio.skills footer {
   footer {
     display: none;
   }
+  section[data-anchor="about"] h2 {
+    display: none;
+  }
 }
